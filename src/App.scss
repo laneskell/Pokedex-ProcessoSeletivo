@@ -1,0 +1,52 @@
+@import '/src/assets/colors.scss';
+@import '/src/components/cardCompare/_CardCompare';
+@import '/src/components/footer/_Footer';
+@import '/src/components/header/_Header';
+@import '/src/components/pokemonCard/_PokemonCard';
+@import '/src/pages/comparePage/_ComparePage';
+@import '/src/pages/detailsPage/_DetailsPage';
+@import '/src/pages/homePage/_HomePage';
+@import '/src/pages/pokedexPage/_PokedexPage';
+
+*{
+  margin:0;
+  padding: 0;
+}
+.containerPagination{
+  width: 30vw;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  img{
+    width:40px;
+    height:40px ;
+    margin:1%;
+    cursor: pointer;
+    &:hover{
+      transform: rotate(720deg);
+      transition: all 0.6s ease-in-out 0s;
+    }
+  }
+  button{
+    width: 50px;
+    height:50px ;
+    border-radius:50px;
+    background-color: $secondary;
+    border: none;
+    outline:none;
+    cursor: pointer;
+    &:hover{
+    background-color:$contratTextLight;
+    }
+  }
+}
+.countPokemon{
+  width: 8px;
+  height:8px;
+  padding: 8px;
+  font-weight: 600;
+  border-radius:50px;
+  position: fixed;
+  top:1%;
+  background-color: $contratTextLight;
+}

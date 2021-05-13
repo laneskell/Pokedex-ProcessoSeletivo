@@ -1,0 +1,27 @@
+@import '/src/assets/colors.scss';
+
+.containerDetails{
+  display: flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items: center;
+  height: 100%;
+  .cardDetails{
+    text-align:center;
+    text-transform: uppercase;
+    background-color: $secondary;
+    width: 330px;
+    border-radius:20px;
+    border: 1px solid $borderColor;
+    box-shadow: 6px 4px 10px $borderColor;
+    margin: 2%;
+    padding: 2%;
+      p, h2{
+        margin-top: 2%;
+      }
+      img{
+        width: 80px ;
+        height:80px ;
+      }
+    }
+}

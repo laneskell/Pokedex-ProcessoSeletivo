@@ -1,0 +1,40 @@
+@import '/src/assets/colors.scss';
+
+.cardPokemon{
+  width: 278px ;
+  height:350px ;
+  display:grid;
+  grid-template-rows: 1fr 7fr 2fr;
+  justify-items:center;
+  border: 1px solid $borderColor;
+  border-radius: 10px;
+  text-align: center;
+  text-transform: uppercase; 
+  background-color: $secondary;
+  color: $contratText;
+  font-size: 1.6rem;
+  font-weight: 600;
+  box-shadow: 6px 4px 10px $borderColor;
+  &:hover{
+  transform: scale(1.05);
+  }
+    img{
+      width: 230px; 
+    }
+    button{
+      cursor: pointer;
+      border: none;
+      border-radius: 5px;
+      margin: 2%;
+      font-size: 1rem;
+      width:clamp( 50px , 100% , 100px);
+      color:$contratTextLight;
+      background-color: $primary;
+        &:hover{
+        transform: scale(1.1);
+      }
+      &:focus {
+        background-color:$buttonSelected;
+      }
+  }
+}

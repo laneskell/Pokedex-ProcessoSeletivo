@@ -1,0 +1,21 @@
+@import '/src/assets/colors.scss';
+
+.pokedexListContainer{
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  justify-content: center;
+  justify-items: center;
+  padding-top: 1%;
+  grid-column-gap: 2vw;
+  grid-row-gap: 7vh;
+  overflow: auto;
+}
+
+
+.cardLoadingPokedex{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

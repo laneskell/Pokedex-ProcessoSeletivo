@@ -1,0 +1,19 @@
+@import '/src/assets/colors.scss';
+
+.containerComparePokemon{
+  background-image: url(https://cutt.ly/2bH2axG);
+  background-repeat: no-repeat;
+  background-size: cover;
+      button{
+        width: 200px;
+        height: 40px;
+        background-color: $secondary;
+        font-weight: 600;
+        font-size: 2rem;
+        border-radius: 10px;
+        cursor: pointer;
+        &:hover{
+        background-color:$contratTextLight;
+        }
+      } 
+  }
